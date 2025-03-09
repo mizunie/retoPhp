@@ -74,5 +74,3 @@ Se realizaron pruebas con ~100.000 registros y se obtuvieron los siguientes resu
 
 MATCH - AGAINST es hasta 35x más rápido que LIKE 'search%'.
 Se ejecuta en 0.0006s en comparación con 0.0213s.
-
-**Importante:** Si alguien considera cambiar MATCH por LIKE, debe realizar pruebas y justificar la decisión.
