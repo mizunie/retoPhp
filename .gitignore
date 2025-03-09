@@ -1,0 +1,12 @@
+# Composer
+/vendor/
+composer.lock
+
+# NetBeans
+nbproject/
+
+# Cache
+.phpunit.result.cache
+
+# Configuración de PHPUnit
+phpunit.xml

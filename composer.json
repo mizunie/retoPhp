@@ -1,0 +1,19 @@
+{
+    "name": "startup/cursos",
+    "description": "Aplicación de consola en PHP para búsqueda de clases y exámenes",
+    "type": "project",
+    "require": {
+        "phpunit/phpunit": "^11.5"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Cursos\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jhoan Ricardo Sepulveda Velasquez"
+        }
+    ]
+}

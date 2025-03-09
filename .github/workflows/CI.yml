@@ -1,0 +1,30 @@
+name: CI Tests for master Pull Requests
+
+on:
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Paso 1: Checkout del código
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Paso 2: Configurar PHP y Composer
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          extensions: pdo, pdo_mysql
+          coverage: none
+
+      # Paso 3: Instalar dependencias
+      - name: Install dependencies
+        run: composer install --no-interaction --no-progress --prefer-dist
+
+      # Paso 4: Ejecutar pruebas
+      - name: Run tests
+        run: vendor/bin/phpunit
