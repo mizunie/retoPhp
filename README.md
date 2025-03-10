@@ -17,11 +17,11 @@ Antes de instalar, por favor asegúrate de tener instalado lo siguiente:
 
 ## Instalación
 
-#### 1. Clona el repositorio:
+#### 1. Clonar el repositorio:
 
 ```bash
-  git clone https://github.com/xxxx/xxxx.git
-  cd xxxx
+  git clone https://github.com/mizunie/retoPhp.git
+  cd retoPhp
 ```
 
 #### 2. Copiar la configuración de PHPUnit:
@@ -30,7 +30,7 @@ Antes de instalar, por favor asegúrate de tener instalado lo siguiente:
   cp phpunit.xml.dist phpunit.xml
 ```
 
-#### 3. Instala las dependencias con Composer:
+#### 3. Instalar las dependencias con Composer:
 
 ```bash
   composer install
@@ -47,7 +47,7 @@ Antes de instalar, por favor asegúrate de tener instalado lo siguiente:
 Ir al directorio del proyecto.
 
 ```bash
-  cd my-project
+  cd retoPhp
 ```
 
 Ejecutar el archivo principal.
